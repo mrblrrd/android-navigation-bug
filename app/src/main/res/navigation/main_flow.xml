@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_flow.xml"
+    app:startDestination="@id/AFragment">
+
+    <fragment
+        android:id="@+id/AFragment"
+        android:name="com.mrblrrd.navigationbug.AFragment"
+        android:label="AFragment" >
+        <action
+            android:id="@+id/action_AFragment_to_ABottomSheetDialogFragment"
+            app:destination="@id/ABottomSheetDialogFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/ABottomSheetDialogFragment"
+        android:name="com.mrblrrd.navigationbug.ABottomSheetDialogFragment"
+        android:label="ABottomSheetDialogFragment" />
+
+</navigation>
